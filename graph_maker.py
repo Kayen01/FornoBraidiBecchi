@@ -31,6 +31,8 @@ for file in os.listdir(directory_dati):
 
 fig, ax = plt.subplots()
 ax.plot(tempo,temperatura,color=colore_grafico)
+plt.ylabel("Temperatura (°C)")
+plt.xlabel("Tempo (s)")
 ax.axhline(y=t_setpoint, linestyle='dotted', color='black')
 plt.yticks(np.linspace(30, 100, 8))
 ax.set_title("Modalità " + mod)
