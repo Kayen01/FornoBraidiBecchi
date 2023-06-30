@@ -31,4 +31,6 @@ for i in range(len(numeri_esperimenti_da_graficare)):
     ax.plot(tempo,temperatura,color=colors[i],label=labels[i])
 
 ax.legend(ncol=ncol_legenda)
+plt.ylabel("Temperatura (°C)")
+plt.xlabel("Tempo (s)")
 plt.savefig(os.path.join(directory_elettronica,"Grafici\\{}".format(nomegrafico)))
